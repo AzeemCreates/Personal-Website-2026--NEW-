@@ -8,7 +8,7 @@ import Projects from "../components/Projects";
 
 export default function HomePage() {
   return (
-    <main className="bg-background">
+    <main className="bg-white pt-20 text-black">
       <Navbar />
       <Hero />
       <About />

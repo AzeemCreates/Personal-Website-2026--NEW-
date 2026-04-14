@@ -1,26 +1,23 @@
 export default function Hero() {
   return (
-    <section id="top" className="border-b border-border bg-background">
-      <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-center px-5 pb-20 pt-28 md:px-8">
-        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-muted">Portfolio</p>
-        <h1 className="text-4xl font-bold text-text sm:text-5xl md:text-6xl">
-          Azeem Karim
-        </h1>
-        <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
+    <section
+      id="top"
+      className="min-h-screen flex flex-col justify-center py-20 px-8"
+    >
+      <div className="mx-auto w-full max-w-4xl">
+        <h1 className="text-5xl font-bold mb-4 text-black">Azeem Karim</h1>
+        <p className="text-xl text-gray-500 mb-2">
           IT Professional · Cybersecurity · Firefighter · Collegiate Esports Coach
         </p>
-        <p className="mt-4 max-w-2xl text-sm leading-7 text-muted sm:text-base">
-          Building mission-critical systems, serving my community, and competing at the
-          highest level.
+        <p className="text-lg text-gray-400 mb-8">
+          Building mission-critical systems, serving my community, and competing at the highest level.
         </p>
-        <div className="mt-8">
-          <a
-            href="#about"
-            className="inline-flex rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white"
-          >
-            Learn More
-          </a>
-        </div>
+        <a
+          href="#about"
+          className="inline-block rounded-md bg-black px-6 py-3 text-sm font-semibold text-white hover:bg-gray-800 transition"
+        >
+          Learn More
+        </a>
       </div>
     </section>
   );

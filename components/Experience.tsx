@@ -8,8 +8,7 @@ const experiences = [
   },
   {
     title: "IT Network Engineer (Volunteer)",
-    organization:
-      "RWJ Barnabas Health — Trinitas Regional Medical Center",
+    organization: "RWJ Barnabas Health — Trinitas Regional Medical Center",
     dateRange: "Jan 2024 – Apr 2026",
     description:
       "Supporting enterprise healthcare network infrastructure. Troubleshooting endpoint incidents, VLAN operations, Cisco wireless controllers, and Aruba mobility platforms.",
@@ -46,17 +45,20 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-white py-20 text-black">
-      <div className="mx-auto w-full max-w-6xl px-5 md:px-8">
-        <h2 className="text-2xl font-semibold sm:text-3xl">Experience</h2>
-        <div className="relative mt-8 space-y-8 border-l border-gray-300 pl-8">
+    <section id="experience" className="py-20 px-8">
+      <div className="mx-auto w-full max-w-4xl">
+        <h2 className="text-3xl font-bold mb-8 text-black">Experience</h2>
+        <div className="border-l-2 border-gray-200 ml-4">
           {experiences.map((item) => (
-            <article key={`${item.title}-${item.dateRange}`} className="relative">
-              <span className="absolute -left-[37px] top-1 h-3 w-3 rounded-full border border-gray-300 bg-white" />
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm">{item.organization}</p>
-              <p className="mt-1 text-sm">{item.dateRange}</p>
-              <p className="mt-2 text-sm">{item.description}</p>
+            <article
+              key={`${item.title}-${item.dateRange}`}
+              className="pl-6 mb-10 relative"
+            >
+              <span className="absolute -left-2 top-1 w-3 h-3 bg-black rounded-full" />
+              <p className="text-sm text-gray-400 mb-1">{item.dateRange}</p>
+              <h3 className="font-bold text-lg text-black">{item.title}</h3>
+              <p className="text-gray-500 mb-2">{item.organization}</p>
+              <p className="text-gray-600 leading-relaxed">{item.description}</p>
             </article>
           ))}
         </div>

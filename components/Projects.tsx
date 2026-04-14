@@ -39,15 +39,20 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-white py-20 text-black">
-      <div className="mx-auto w-full max-w-6xl px-5 md:px-8">
-        <h2 className="text-2xl font-semibold sm:text-3xl">Projects</h2>
-        <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+    <section id="projects" className="py-20 px-8">
+      <div className="mx-auto w-full max-w-4xl">
+        <h2 className="text-3xl font-bold mb-8 text-black">Projects</h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <article key={project.title} className="rounded-md border border-gray-300 p-5">
-              <h3 className="text-lg font-semibold">{project.title}</h3>
-              <p className="mt-2 text-sm">{project.description}</p>
-              <span className="mt-4 inline-block rounded border border-gray-300 px-2.5 py-1 text-xs">
+            <article
+              key={project.title}
+              className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition"
+            >
+              <h3 className="text-lg font-bold text-black">{project.title}</h3>
+              <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                {project.description}
+              </p>
+              <span className="inline-block text-xs bg-gray-100 text-gray-600 rounded-full px-3 py-1 mt-3">
                 {project.tag}
               </span>
             </article>
