@@ -5,9 +5,11 @@ export default function About() {
         <div>
           <h2 className="text-2xl font-semibold text-text sm:text-3xl">About</h2>
           <p className="mt-5 text-sm leading-7 text-muted sm:text-base">
-            I am Azeem Karim, an IT student from New Jersey with a focus on building
-            dependable technology and growing through hands-on experience. This section is
-            a placeholder for a fuller professional bio, goals, and personal mission.
+            I am an IT professional with 1.5+ years supporting mission-critical
+            infrastructure across government and healthcare environments. Currently
+            architecting a production-scale AI system for the State of New Jersey.
+            Pursuing a B.S. in Information Technology with a specialization in
+            Cybersecurity at NJIT, graduating August 2026.
           </p>
         </div>
         <div className="flex items-start md:justify-end">

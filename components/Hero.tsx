@@ -7,10 +7,11 @@ export default function Hero() {
           Azeem Karim
         </h1>
         <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">
-          IT student, firefighter, and coach.
+          IT Professional · Cybersecurity · Firefighter · Collegiate Esports Coach
         </p>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-muted sm:text-base">
-          Building practical systems, serving my community, and helping others grow.
+          Building mission-critical systems, serving my community, and competing at the
+          highest level.
         </p>
         <div className="mt-8">
           <a
